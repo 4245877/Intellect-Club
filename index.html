@@ -3,162 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Інтелект-Клуб | Центр Цивілізаційного Розвитку</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f4f7f6;
-            color: #1a2b3c;
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #5e3fd3, #2563eb);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-            transform: translateY(0);
-        }
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-    </style>
+    <title>Intelect Club</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50">
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-500 rounded-full flex items-center justify-center">
-                    <span class="text-white font-bold text-lg">IK</span>
-                </div>
-                <h1 class="text-xl font-bold text-gray-800">Інтелект-Клуб</h1>
-            </div>
-            <nav>
-                <ul class="flex space-x-6 text-gray-600">
-                    <li><a href="#about" class="hover:text-blue-600 transition">Про нас</a></li>
-                    <li><a href="#nluk" class="hover:text-blue-600 transition">НЛУК</a></li>
-                    <li><a href="#mission" class="hover:text-blue-600 transition">Місія</a></li>
-                    <li><a href="#contact" class="hover:text-blue-600 transition">Контакт</a></li>
-                </ul>
-            </nav>
-        </div>
+<body>
+    <header>
+        <h1>Intelect Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#nluk">НЛУК</a></li>
+                <li><a href="#news">Новини та події</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="pt-24 container mx-auto px-4">
-        <section id="hero" class="text-center mb-20">
-            <h2 class="text-5xl font-bold mb-6 gradient-text">
-                Трансформація Управління
-            </h2>
-            <p class="text-xl max-w-3xl mx-auto text-gray-600 leading-relaxed">
-                Інноваційний підхід до розвитку людського потенціалу та подолання глобальних викликів через усвідомлене управління
-            </p>
-            <div class="mt-10 flex justify-center space-x-4">
-                <a href="#nluk" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full hover:from-purple-700 hover:to-blue-600 transition">
-                    Дізнатися більше
-                </a>
-                <a href="#contact" class="px-8 py-3 border border-gray-300 text-gray-700 rounded-full hover:bg-gray-100 transition">
-                    Зв'язатися
-                </a>
-            </div>
+    <main>
+        <section id="home">
+            <h2>Новий людиноцентристський управлінський курс (НЛУК) - майбутнє України</h2>
+            <p>Сьогодні людство, а особливо Україна, опинилися в ситуації абсолютної невизначеності. Загрози надходять з різних боків: кліматичні катастрофи, енергетичні кризи, фінансові й політичні нестабільності, наслідки пандемій та вплив інтернету в умовах глобалізації. Для України додаються внутрішні виклики — екстраговано неефективне державне управління, нездоланна корупція та реальна загроза втрати державності.</p>
+            <p>Водночас людина є одночасно причиною цих проблем і ключем до їх вирішення. Закон єдності й боротьби протилежностей підкреслює, що людина поєднує в собі природну (тваринну) та соціальну (суспільну) сутність. Саме від якості управління залежить, як ці аспекти співіснуватимуть. НЛУК від Інтелект-Клубу пропонує інноваційний підхід, заснований на людиноцентризмі — гармонізації цивілізаційних відносин через використання інтелектуального потенціалу людини.</p>
+            <p><strong>Заклик до дії:</strong> Дізнайтеся, як НЛУК може змінити Україну та світ!</p>
         </section>
 
-        <section id="challenges" class="mb-16">
-            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Виклики сучасності</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-md card-hover">
-                    <div class="text-4xl mb-4 text-blue-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h4 class="font-bold text-xl mb-4 text-gray-800">Невизначеність</h4>
-                    <p class="text-gray-600">Україна та світ перебувають у ситуації абсолютної невизначеності з загрозами з різних боків.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-md card-hover">
-                    <div class="text-4xl mb-4 text-blue-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h3a1 1 0 011 1v5m-4 0h4" />
-                        </svg>
-                    </div>
-                    <h4 class="font-bold text-xl mb-4 text-gray-800">Державність</h4>
-                    <p class="text-gray-600">Реальна загроза знищення державності через неефективне управління та корупцію.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-md card-hover">
-                    <div class="text-4xl mb-4 text-blue-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <h4 class="font-bold text-xl mb-4 text-gray-800">Глобальні виклики</h4>
-                    <p class="text-gray-600">Наближення до глобального колапсу через кліматичні, енергетичні, фінансові та інші кризи.</p>
-                </div>
-            </div>
+        <section id="about">
+            <h2>Про нас</h2>
+            <h3>Місія Інтелект-Клубу</h3>
+            <p>Інтелект-Клуб — це об’єднання експертів, які розробляють і впроваджують технології для сталого розвитку України. Ми віримо, що людиноцентризм і управлінська культура є основою для подолання сучасних криз і формування оптимістичного майбутнього.</p>
+            <h3>Наша команда</h3>
+            <ul>
+                <li><strong>Експерти з управління:</strong> розробники НЛУК.</li>
+                <li><strong>Науковці:</strong> дослідники соціальних і технологічних аспектів.</li>
+                <li><strong>Інноватори:</strong> фахівці з впровадження прогресивних ідей.</li>
+            </ul>
         </section>
 
-        <section id="nluk" class="bg-white rounded-2xl shadow-lg p-12 mb-16">
-            <div class="max-w-4xl mx-auto">
-                <h3 class="text-3xl font-bold mb-8 text-center gradient-text">
-                    Новий Людиноцентристський Управлінський Курс (НЛУК)
-                </h3>
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <p class="text-gray-700 mb-6 leading-relaxed">
-                            НЛУК - інноваційний науково-технологічний продукт, спрямований на глибинну трансформацію управлінських підходів через:
-                        </p>
-                        <ul class="space-y-4 text-gray-600">
-                            <li class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                                </svg>
-                                Формування ідеології людиноцентризму
-                            </li>
-                            <li class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.768-.231-1.479-.608-2.121M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.768.231-1.479.608-2.121M14 7a3 3 0 11-6 0 3 3 0 016 0zm-7 7a2 2 0 11-4 0 2 2 0 014 0zm12 0a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                                Гармонізація цивілізаційних відносин
-                            </li>
-                            <li class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.071 0l-.822.821a2.086 2.086 0 00-.61 1.483v.785a2 2 0 01-2 2H9.18a2 2 0 01-2-2v-.786a2.084 2.084 0 00-.61-1.482l-.823-.821z" />
-                                </svg>
-                                Розвиток інтелектуального потенціалу
-                            </li>
-                            <li class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                                </svg>
-                                Подолання глобальних викликів
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex justify-center">
-                        <div class="w-64 h-64 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full blur-2xl opacity-30 absolute"></div>
-                        <img src="/api/placeholder/400/400" alt="НЛУК Концепція" class="relative z-10 rounded-2xl shadow-lg">
-                    </div>
-                </div>
-            </div>
+        <section id="nluk">
+            <h2>НЛУК</h2>
+            <h3>Що таке НЛУК?</h3>
+            <p>Новий людиноцентристський управлінський курс (НЛУК) — це науково-технологічний продукт, який ставить людину в центр управлінських процесів. Він спрямований на гармонізацію цивілізаційних відносин і використання інтелектуального ресурсу для вирішення криз.</p>
+            <h3>Цілі та завдання</h3>
+            <ul>
+                <li><strong>Для України:</strong> подолання корупції, зміцнення державності, підвищення управлінської культури.</li>
+                <li><strong>Для світу:</strong> запобігання самознищенню людства, формування ідеології людиноцентризму.</li>
+                <li><strong>Загалом:</strong> розвиток інтелектуального потенціалу на всіх рівнях суспільства.</li>
+            </ul>
+            <h3>Методологія</h3>
+            <p>НЛУК базується на принципах:</p>
+            <ul>
+                <li><strong>Людиноцентризму:</strong> повага до прав людини як основа гармонії.</li>
+                <li><strong>Управлінської культури:</strong> встановлення правил поведінки для ефективної взаємодії.</li>
+                <li><strong>Інтелектуального прогресу:</strong> максимальне використання потенціалу людини.</li>
+            </ul>
+            <h3>Переваги</h3>
+            <ul>
+                <li><strong>Для України:</strong> створення умов для сталого розвитку та уникнення колапсу державності.</li>
+                <li><strong>Для світу:</strong> новий підхід до глобальних викликів, який може бути адаптований іншими країнами.</li>
+            </ul>
+            <h3>Чи є можливості для впровадження в Україні?</h3>
+            <p>Так, в Україні існують сили та можливості для впровадження НЛУК. Інтелект-Клуб об’єднує експертів, які вже працюють над інтеграцією курсу в управлінські практики. Питання в тому, як донести його зміст до суспільства — саме для цього створено цей веб-сайт.</p>
         </section>
 
-        <section id="contact" class="text-center bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-2xl py-16 mb-16">
-            <h3 class="text-4xl font-bold mb-6">Приєднуйтесь до Змін</h3>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">
-                Станьте частиною руху за усвідомлене управління, інноваційний розвиток та подолання глобальних викликів
-            </p>
-            <div class="flex justify-center space-x-4">
-                <a href="mailto:info@intelect-club.ua" class="px-10 py-4 bg-white text-blue-600 rounded-full hover:bg-gray-100 transition">
-                    Надіслати повідомлення
-                </a>
-                <a href="#" class="px-10 py-4 border border-white text-white rounded-full hover:bg-white/20 transition">
-                    Детальніше
-                </a>
-            </div>
+        <section id="news">
+            <h2>Новини та події</h2>
+            <h3>Останні оновлення</h3>
+            <ul>
+                <li><strong>Стаття:</strong> "Людиноцентризм як ключ до подолання криз" — читайте про основи НЛУК.</li>
+                <li><strong>Вебінар:</strong> "НЛУК: технології управління майбутнього" — дата: 15 червня 2023 року.</li>
+            </ul>
+            <h3>Майбутні заходи</h3>
+            <ul>
+                <li>Семінар із впровадження НЛУК у державне управління (дата уточнюється).</li>
+                <li>Конференція "Людиноцентризм і прогрес" (осінь 2023).</li>
+            </ul>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакти</h2>
+            <p>Ми готові відповісти на ваші запитання та обговорити співпрацю!</p>
+            <form action="#" method="post">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+            <p><strong>Адреса:</strong> вул. Інтелектуальна, 1, Київ, Україна</p>
+            <p><strong>Телефон:</strong> +380 123 456 789</p>
+            <p><strong>Email:</strong> info@intelectclub.ua</p>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <p class="mb-4">&copy; 2
+    <footer>
+        <p>&copy; 2023 Intelect Club. Усі права захищено.</p>
+    </footer>
+</body>
+</html>
