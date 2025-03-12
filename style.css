@@ -14,6 +14,7 @@
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --gutter: 1rem;
 }
 
 /* Современный сброс стилей */
@@ -26,6 +27,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -44,11 +46,11 @@ img {
   height: auto;
 }
 
-/* Современный хедер с градиентом */
+/* Хедер с компактной навигацией */
 header {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: white;
-  padding: 1.25rem 1.5rem;
+  padding: 0;
   box-shadow: var(--shadow);
   position: sticky;
   top: 0;
@@ -56,27 +58,98 @@ header {
   backdrop-filter: blur(5px);
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem var(--gutter);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  z-index: 101;
+}
+
+/* Кнопка переключения */
+.nav-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-toggle-icon {
+  position: relative;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.nav-toggle-icon::before {
+  content: "▼";
+  font-size: 0.8rem;
+  transition: transform var(--transition);
+}
+
+.nav-toggle.active .nav-toggle-icon::before {
+  content: "▲";
+}
+
+/* Горизонтальная навигация */
+.nav-container {
+  width: 100%;
+  overflow: hidden;
+  transition: max-height var(--transition);
+  max-height: 0; /* Скрыта по умолчанию */
+  background: rgba(67, 97, 238, 0.97);
+}
+
+.nav-container.open {
+  max-height: 300px; /* Достаточно для отображения всех элементов */
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.2);
+}
+
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
   list-style: none;
+  padding: 0.75rem var(--gutter);
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+nav ul::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}
+
+nav li {
+  flex: 0 0 auto;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 0.875rem;
+  padding: 0.5rem 0.75rem;
   border-radius: var(--radius-sm);
   transition: all var(--transition);
   font-weight: 500;
   position: relative;
+  white-space: nowrap;
+  display: block;
 }
 
-nav a:hover {
+nav a:hover, nav a:active {
   background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-2px);
 }
 
 nav a::after {
@@ -92,25 +165,25 @@ nav a::after {
 }
 
 nav a:hover::after {
-  width: 60%;
+  width: 40%;
 }
 
 /* Основной контент */
 main {
   flex: 1;
-  padding: 2rem 1.5rem;
+  padding: var(--gutter);
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 section {
   background: var(--bg-card);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   transition: transform var(--transition), box-shadow var(--transition);
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
@@ -123,7 +196,7 @@ section:hover {
 h2 {
   color: var(--primary);
   margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   position: relative;
   padding-bottom: 0.5rem;
@@ -165,6 +238,8 @@ input, textarea, select {
   font-size: 1rem;
   transition: all var(--transition);
   background-color: var(--bg);
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -199,7 +274,7 @@ footer {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: white;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.25rem;
   margin-top: auto;
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.05);
 }
@@ -221,23 +296,48 @@ footer {
   }
   
   section {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 }
 
 @media (max-width: 576px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   section {
-    padding: 1.25rem;
+    padding: 1rem;
+  }
+  
+  .nav-container.open {
+    max-height: 200px;
+  }
+}
+
+/* Оптимизация для больших экранов */
+@media (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-container {
+    max-height: none;
+    background: transparent;
+  }
+  
+  header {
+    padding: 0.75rem 2rem;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  nav ul {
+    padding: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -271,3 +371,16 @@ footer {
     background-position: -200% 0;
   }
 }
+
+/* JavaScript для переключения меню */
+/* 
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navContainer = document.querySelector('.nav-container');
+  
+  navToggle.addEventListener('click', function() {
+    navContainer.classList.toggle('open');
+    navToggle.classList.toggle('active');
+  });
+});
+*/
