@@ -3,104 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intelect Club</title>
+    <title>Інтелект-Клуб цивілізаційного розвитку України</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Intelect Club</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#nluk">НЛУК</a></li>
-                <li><a href="#news">Новини та події</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="/api/placeholder/50/50" alt="Логотип Інтелект-Клубу">
+                <h1>Інтелект-Клуб</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#activity">Діяльність</a></li>
+                    <li><a href="#projects">Проєкти</a></li>
+                    <li><a href="#events">Події</a></li>
+                    <li><a href="#publications">Публікації</a></li>
+                    <li><a href="#join">Приєднатися</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Новий людиноцентристський управлінський курс (НЛУК) - майбутнє України</h2>
-            <p>Сьогодні людство, а особливо Україна, опинилися в ситуації абсолютної невизначеності. Загрози надходять з різних боків: кліматичні катастрофи, енергетичні кризи, фінансові й політичні нестабільності, наслідки пандемій та вплив інтернету в умовах глобалізації. Для України додаються внутрішні виклики — екстраговано неефективне державне управління, нездоланна корупція та реальна загроза втрати державності.</p>
-            <p>Водночас людина є одночасно причиною цих проблем і ключем до їх вирішення. Закон єдності й боротьби протилежностей підкреслює, що людина поєднує в собі природну (тваринну) та соціальну (суспільну) сутність. Саме від якості управління залежить, як ці аспекти співіснуватимуть. НЛУК від Інтелект-Клубу пропонує інноваційний підхід, заснований на людиноцентризмі — гармонізації цивілізаційних відносин через використання інтелектуального потенціалу людини.</p>
-            <p><strong>Заклик до дії:</strong> Дізнайтеся, як НЛУК може змінити Україну та світ!</p>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Інтелект-Клуб цивілізаційного розвитку України</h2>
+            <p>Єдина в Україні організація, що пропонує «Новий людиноцентричний управлінський курс (НЛУК)» в умовах еколюдиноцентризму. Ми об'єднуємо інтелектуальний потенціал України та світу заради побудови квітучого повоєнного суспільства.</p>
+            <div>
+                <a href="#join" class="btn">Приєднатися</a>
+                <a href="#projects" class="btn btn-outline">Наші проєкти</a>
+            </div>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>Про нас</h2>
-            <h3>Місія Інтелект-Клубу</h3>
-            <p>Інтелект-Клуб — це об’єднання експертів, які розробляють і впроваджують технології для сталого розвитку України. Ми віримо, що людиноцентризм і управлінська культура є основою для подолання сучасних криз і формування оптимістичного майбутнього.</p>
-            <h3>Наша команда</h3>
-            <ul>
-                <li><strong>Експерти з управління:</strong> розробники НЛУК.</li>
-                <li><strong>Науковці:</strong> дослідники соціальних і технологічних аспектів.</li>
-                <li><strong>Інноватори:</strong> фахівці з впровадження прогресивних ідей.</li>
-            </ul>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Про нас</h2>
+                <p>Дізнайтеся більше про нашу історію, місію та принципи діяльності</p>
+            </div>
+            <div class="row">
+                <div>
+                    <h3>Історія створення</h3>
+                    <p>«Інтелект-Клуб цивілізаційного розвитку України» був створений як відповідь на потребу об'єднання інтелектуального потенціалу країни для розробки нових підходів до управління та розвитку держави. Наша унікальність полягає в системному підході до вирішення складних суспільних викликів через призму людиноцентризму.</p>
+                    
+                    <h3>Місія та цілі</h3>
+                    <p>Наша місія - сприяння інтелектуальному розвитку України, модернізація державного устрою та розширення міжнародної співпраці. Ми прагнемо створити платформу для діалогу між науковцями, експертами, громадськими діячами та представниками влади з метою формування квітучого повоєнного суспільства.</p>
+                    
+                    <h3>Принципи діяльності</h3>
+                    <ul>
+                        <li>Незалежність від політичних сил</li>
+                        <li>Відкритість та прозорість діяльності</li>
+                        <li>Професіоналізм та науковий підхід</li>
+                        <li>Патріотизм та відданість інтересам України</li>
+                        <li>Толерантність та повага до різноманіття думок</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Team Section -->
+            <div class="section-title" style="margin-top: 3rem;">
+                <h2>Наша команда</h2>
+                <p>Пізнайомтеся з ключовими експертами та науковцями клубу</p>
+            </div>
+            <div class="team-container">
+                <div class="team-member">
+                    <div class="member-img" style="background-image: url('/api/placeholder/150/150');"></div>
+                    <h3>Іван Петренко</h3>
+                    <p>Засновник, доктор політичних наук</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img" style="background-image: url('/api/placeholder/150/150');"></div>
+                    <h3>Олена Коваленко</h3>
+                    <p>Керівник аналітичного відділу</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img" style="background-image: url('/api/placeholder/150/150');"></div>
+                    <h3>Микола Сидоренко</h3>
+                    <p>Координатор освітніх програм</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img" style="background-image: url('/api/placeholder/150/150');"></div>
+                    <h3>Наталія Мельник</h3>
+                    <p>Експерт з міжнародної співпраці</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="nluk">
-            <h2>НЛУК</h2>
-            <h3>Що таке НЛУК?</h3>
-            <p>Новий людиноцентристський управлінський курс (НЛУК) — це науково-технологічний продукт, який ставить людину в центр управлінських процесів. Він спрямований на гармонізацію цивілізаційних відносин і використання інтелектуального ресурсу для вирішення криз.</p>
-            <h3>Цілі та завдання</h3>
-            <ul>
-                <li><strong>Для України:</strong> подолання корупції, зміцнення державності, підвищення управлінської культури.</li>
-                <li><strong>Для світу:</strong> запобігання самознищенню людства, формування ідеології людиноцентризму.</li>
-                <li><strong>Загалом:</strong> розвиток інтелектуального потенціалу на всіх рівнях суспільства.</li>
-            </ul>
-            <h3>Методологія</h3>
-            <p>НЛУК базується на принципах:</p>
-            <ul>
-                <li><strong>Людиноцентризму:</strong> повага до прав людини як основа гармонії.</li>
-                <li><strong>Управлінської культури:</strong> встановлення правил поведінки для ефективної взаємодії.</li>
-                <li><strong>Інтелектуального прогресу:</strong> максимальне використання потенціалу людини.</li>
-            </ul>
-            <h3>Переваги</h3>
-            <ul>
-                <li><strong>Для України:</strong> створення умов для сталого розвитку та уникнення колапсу державності.</li>
-                <li><strong>Для світу:</strong> новий підхід до глобальних викликів, який може бути адаптований іншими країнами.</li>
-            </ul>
-            <h3>Чи є можливості для впровадження в Україні?</h3>
-            <p>Так, в Україні існують сили та можливості для впровадження НЛУК. Інтелект-Клуб об’єднує експертів, які вже працюють над інтеграцією курсу в управлінські практики. Питання в тому, як донести його зміст до суспільства — саме для цього створено цей веб-сайт.</p>
-        </section>
+    <!-- Activities Section -->
+    <section id="activity" class="section" style="background-color: #f2f2f2;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наша діяльність</h2>
+                <p>Ключові напрямки діяльності клубу</p>
+            </div>
+            <div class="directions">
+                <div class="direction-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Аналітичні дослідження</h3>
+                    <p>Аналіз суспільно-політичних, економічних та культурних процесів, розробка стратегічних рекомендацій для влади</p>
+                </div>
+                <div class="direction-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Освітні проєкти</h3>
+                    <p>Академічний навчальний центр системного управління (АНЦСУ), лекції, семінари для підготовки управлінців</p>
+                </div>
+                <div class="direction-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Інноваційні проєкти</h3>
+                    <p>Підтримка стартапів, організація конкурсів, трансфер технологій і комерціалізація розробок</p>
+                </div>
+                <div class="direction-item">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <h3>Просвітницька діяльність</h3>
+                    <p>Інформаційні кампанії з популяризації НЛУК, видання матеріалів, онлайн-платформа для обміну ідеями</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="news">
-            <h2>Новини та події</h2>
-            <h3>Останні оновлення</h3>
-            <ul>
-                <li><strong>Стаття:</strong> "Людиноцентризм як ключ до подолання криз" — читайте про основи НЛУК.</li>
-                <li><strong>Вебінар:</strong> "НЛУК: технології управління майбутнього" — дата: 15 червня 2023 року.</li>
-            </ul>
-            <h3>Майбутні заходи</h3>
-            <ul>
-                <li>Семінар із впровадження НЛУК у державне управління (дата уточнюється).</li>
-                <li>Конференція "Людиноцентризм і прогрес" (осінь 2023).</li>
-            </ul>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наші проєкти</h2>
+                <p>Ознайомтеся з поточними та завершеними проєктами клубу</p>
+            </div>
+            <div class="news-container">
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">Цифрове Віче</h3>
+                        <p class="news-excerpt">Інноваційна технологія для громадського обговорення важливих питань розвитку держави та прийняття колективних рішень.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Детальніше</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">Академічний навчальний центр</h3>
+                        <p class="news-excerpt">Освітня ініціатива з підготовки нового покоління управлінців, здатних впроваджувати принципи НЛУК.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Детальніше</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">Миротворча освіта</h3>
+                        <p class="news-excerpt">Програма поширення культури системного управління та мирного вирішення конфліктів.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contacts">
-            <h2>Контакти</h2>
-            <p>Ми готові відповісти на ваші запитання та обговорити співпрацю!</p>
-            <form action="#" method="post">
-                <label for="name">Ім'я:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Повідомлення:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Надіслати</button>
-            </form>
-            <p><strong>Адреса:</strong> вул. Інтелектуальна, 1, Київ, Україна</p>
-            <p><strong>Телефон:</strong> +380 123 456 789</p>
-            <p><strong>Email:</strong> info@intelectclub.ua</p>
-        </section>
-    </main>
+    <!-- Events Section -->
+    <section id="events" class="section" style="background-color: #f2f2f2;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Події</h2>
+                <p>Календар майбутніх заходів та архів минулих подій</p>
+            </div>
+            <div class="news-container">
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">30 березня 2025</div>
+                        <h3 class="news-title">Конференція "Україна 2030: шлях до людиноцентричного суспільства"</h3>
+                        <p class="news-excerpt">Міжнародна конференція за участю провідних українських та зарубіжних експертів.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Зареєструватися</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">15 квітня 2025</div>
+                        <h3 class="news-title">Тренінг "Системне управління в умовах кризи"</h3>
+                        <p class="news-excerpt">Практичний тренінг для керівників державних установ та громадських організацій.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Зареєструватися</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">10 березня 2025</div>
+                        <h3 class="news-title">Круглий стіл "Інновації для суспільства"</h3>
+                        <p class="news-excerpt">Обговорення інноваційних підходів до вирішення суспільних проблем.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Переглянути запис</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Публікації</h2>
+                <p>Аналітичні звіти, статті та книги експертів клубу</p>
+            </div>
+            <div class="news-container">
+                <div class="news-item">
+                    <div class="news-content">
+                        <div class="news-date">Березень 2025</div>
+                        <h3 class="news-title">Новий людиноцентричний управлінський курс: теорія і практика</h3>
+                        <p class="news-excerpt">Монографія, присвячена теоретичним основам НЛУК та практичним аспектам його впровадження в Україні.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Завантажити</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <div class="news-date">Лютий 2025</div>
+                        <h3 class="news-title">Аналітичний звіт: Стан реформ в Україні 2025</h3>
+                        <p class="news-excerpt">Комплексний аналіз прогресу реформ в Україні з рекомендаціями щодо їх удосконалення.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Завантажити</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <div class="news-date">Січень 2025</div>
+                        <h3 class="news-title">Цивілізаційний вибір України в контексті глобальних змін</h3>
+                        <p class="news-excerpt">Збірка статей провідних експертів клубу про місце України в світових процесах.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Завантажити</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="cta-section">
+        <div class="container">
+            <h2>Приєднуйтесь до Інтелект-Клубу</h2>
+            <p>Станьте частиною спільноти, яка прагне змінити Україну та світ на краще. Ми запрошуємо науковців, експертів, активістів та всіх, хто поділяє наші цінності.</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn">Стати членом клубу</a>
+                <a href="#" class="cta-btn">Стати волонтером</a>
+                <a href="#" class="cta-btn">Запропонувати партнерство</a>
+            </div>
+        </div>
+    </section>
+
+       <!-- News Section -->
+       <section id="news" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Новини</h2>
+                <p>Останні оновлення про діяльність організації</p>
+            </div>
+            <div class="news-container">
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">10 березня 2025</div>
+                        <h3 class="news-title">Підписано меморандум про співпрацю з міжнародними партнерами</h3>
+                        <p class="news-excerpt">Інтелект-Клуб розширює міжнародну співпрацю для реалізації спільних проєктів.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Читати далі</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">5 березня 2025</div>
+                        <h3 class="news-title">Старт нової освітньої програми для молодих лідерів</h3>
+                        <p class="news-excerpt">Програма фокусується на розвитку навичок системного мислення та управління.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Читати далі</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="news-content">
+                        <div class="news-date">1 березня 2025</div>
+                        <h3 class="news-title">Представлено концепцію "Цифрове Віче 2.0"</h3>
+                        <p class="news-excerpt">Оновлена версія платформи для громадського обговорення з розширеним функціоналом.</p>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem;">Читати далі</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Контакти</h2>
+                <p>Зв'яжіться з нами для співпраці, запитань чи пропозицій</p>
+            </div>
+            <div class="row">
+                <div>
+                    <h3>Контактна інформація</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Адреса: м. Київ, вул. Хрещатик, 1, Україна</p>
+                    <p><i class="fas fa-phone"></i> Телефон: +380 (44) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@intellect-club.org.ua</p>
+                    <h3>Соціальні мережі</h3>
+                    <p>
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a> |
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a> |
+                        <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Форма зворотного зв'язку</h3>
+                    <form action="#" method="post">
+                        <label for="name">Ім'я:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Повідомлення:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit" class="btn">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section" style="background-color: #f2f2f2;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ресурси</h2>
+                <p>Бібліотека, мультимедіа та партнери клубу</p>
+            </div>
+            <div class="row">
+                <div>
+                    <h3>Бібліотека</h3>
+                    <p>Електронні книги, статті та звіти для завантаження.</p>
+                    <ul>
+                        <li><a href="#">Новий людиноцентричний управлінський курс: теорія і практика</a></li>
+                        <li><a href="#">Аналітичний звіт: Стан реформ в Україні 2025</a></li>
+                        <li><a href="#">Цивілізаційний вибір України в контексті глобальних змін</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Мультимедіа</h3>
+                    <p>Відео лекцій, аудіозаписи семінарів.</p>
+                    <ul>
+                        <li><a href="#">Запис конференції "Україна 2030"</a></li>
+                        <li><a href="#">Тренінг "Системне управління в умовах кризи"</a></li>
+                        <li><a href="#">Круглий стіл "Інновації для суспільства"</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Партнери</h3>
+                    <p>Організації, що співпрацюють з Інтелект-Клубом.</p>
+                    <ul>
+                        <li><a href="#">Міжнародний фонд "Відродження"</a></li>
+                        <li><a href="#">Національна академія наук України</a></li>
+                        <li><a href="#">Європейський інститут інновацій та технологій</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Поширені запитання</h2>
+                <p>Відповіді на найчастіші запитання про діяльність клубу</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>Що таке Новий людиноцентричний управлінський курс (НЛУК)?</h3>
+                    <p>НЛУК - це інноваційний підхід до управління державою, який ставить людину та її потреби в центр усіх процесів. Він базується на принципах еколюдиноцентризму та спрямований на гармонійний розвиток суспільства.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Як я можу приєднатися до Інтелект-Клубу?</h3>
+                    <p>Ви можете стати членом клубу, заповнивши заявку на нашому сайті. Ми вітаємо науковців, експертів, активістів та всіх, хто поділяє наші цінності.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Які проєкти реалізує клуб?</h3>
+                    <p>Наші проєкти охоплюють аналітичні дослідження, освітні програми, інноваційні ініціативи та просвітницьку діяльність. Детальніше про поточні проєкти ви можете дізнатися в розділі "Проєкти".</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Як я можу підтримати діяльність клубу?</h3>
+                    <p>Ви можете підтримати нас фінансово, ставши волонтером або запропонувавши партнерство. Детальніше про способи підтримки ви можете дізнатися в розділі "Пожертви".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="section" style="background-color: #f2f2f2;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Пожертви</h2>
+                <p>Підтримайте розвиток Інтелект-Клубу та його проєктів</p>
+            </div>
+            <div class="row">
+                <div>
+                    <h3>Як зробити внесок</h3>
+                    <p>Ваша підтримка допоможе нам продовжувати нашу діяльність з розвитку інтелектуального потенціалу України. Ви можете зробити пожертву через наш сайт або зв'язатися з нами для обговорення інших способів підтримки.</p>
+                    <a href="#" class="btn">Зробити пожертву</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Intelect Club. Усі права захищено.</p>
+        <div class="container">
+            <p>© 2025 Інтелект-Клуб цивілізаційного розвитку України. Усі права захищено.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
