@@ -32,7 +32,6 @@ html {
 
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
   background-color: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -103,7 +102,7 @@ header {
 
 /* Горизонтальная навигация */
 .nav-container {
-  width: 100%;
+  width: 10%;
   overflow: hidden;
   transition: max-height var(--transition);
   max-height: 0; /* Скрыта по умолчанию */
@@ -372,15 +371,3 @@ footer {
   }
 }
 
-/* JavaScript для переключения меню */
-/* 
-document.addEventListener('DOMContentLoaded', function() {
-  const navToggle = document.querySelector('.nav-toggle');
-  const navContainer = document.querySelector('.nav-container');
-  
-  navToggle.addEventListener('click', function() {
-    navContainer.classList.toggle('open');
-    navToggle.classList.toggle('active');
-  });
-});
-*/
