@@ -12,6 +12,7 @@
   --rounded: 12px;
   --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .about-section {
   background-color: #f9f9f9;
   padding: 60px 0;
@@ -32,6 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 40px;
 }
 
 .history, .mission, .principles {
@@ -42,22 +44,36 @@
   position: relative;
   padding-left: 30px;
   border-left: 2px solid #ccc;
+  margin-top: 20px;
 }
 
 .timeline-item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #007bff;
 }
 
 .timeline-date {
   font-weight: bold;
   color: #333;
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .timeline-content p {
   font-size: 16px;
   color: #555;
+  line-height: 1.5;
 }
 
 .mission p {
@@ -70,6 +86,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .principle-item {
@@ -80,7 +97,13 @@
   background-color: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principle-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .principle-item i {
@@ -91,7 +114,29 @@
 .principle-item p {
   font-size: 16px;
   color: #333;
+  margin: 0;
 }
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .principle-item {
+    flex: 1 1 100%;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .section-title p {
+    font-size: 16px;
+  }
+}
+
+
 /* Сброс и базовые стили */
 * {
   margin: 0;
